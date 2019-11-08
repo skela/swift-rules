@@ -29,3 +29,16 @@ guard true else
 {
     return
 }
+
+class GetterClass
+{
+    private var _testing = 1
+    var testing : Int{
+        get { 
+            return _testing 
+        }
+        set { 
+            _testing = newValue 
+        }
+    }
+}

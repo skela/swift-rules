@@ -26,3 +26,26 @@ for i in 0..1
 }
 
 guard true else { return }
+
+class GetterClass
+{
+    private var _testing = 1
+    var testing : Int
+    {
+        get { return _testing }
+        set { _testing = newValue }
+    }
+
+    private var _testing2 = 1
+    var testing2 : Int
+    {
+        get
+        {
+            return _testing2
+        }
+        set
+        {
+            _testing2 = newValue
+        }
+    }
+}
