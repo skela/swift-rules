@@ -48,4 +48,7 @@ class GetterClass
             _testing2 = newValue
         }
     }
+
+    private var _testing3 = 1
+    var testing3 : Int { get { return _testing3 } set { _testing3 = newValue } }
 }
